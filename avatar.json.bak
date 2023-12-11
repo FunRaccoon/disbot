@@ -1,0 +1,65 @@
+{
+    "avatarStalker" : [
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855690282/C14957E79F8056F958684DD7861949A477584DBF/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855662827/6283094422C69A0FF45899F836B277DFC4AED05B/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855663580/A76289B6AA77C2DA535DDC34C855F355B61003DB/"
+    ],
+    "avatarNeutrals" : [
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855662377/6C0771D749296134018920F6BFD34FF50D3DAED3/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855647804/21E3B0840173B387400367394C5C0E90334E93BC/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855691526/3F1C7DCC0459FF1D83575AA7515FE0E4D7A95C85/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855681937/71174F745FB8C28CCF00409FCAE6967FCAA132A2/"
+    ],
+    "avatarBandits" : [
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855686914/1468E6B6BB1268173C88578AB1ABA2FCDB366080/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855648028/5F6464FD542A940EC57957626E22B09000631EF6/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855667017/FCA4B4C9F4F93E40D26F96705116FCFEF817774F/"
+    ],
+    "avatarCS" : [
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855647315/EE584AE7B23E07E0C3BA7BDDA3F1DE522F77C5A2/"
+    ],
+    "avatarRenegats" : [
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855700017/6EC3A29588D3AD51EC6887BEDA42912E9412F19A/"
+    ],
+    "avatarDOLG" : [
+        "https://steamuserimages-a.akamaihd.net/ugc/80345479787689229/DD1F2DF5E02BF2CB512277C34378EECDC2632ABB/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855651074/7E9A240F37BDAEF5754E711634737DB32D71CBA6/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855651747/FA7CEA28A702E4BE68B98ADD28082C3757416315/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855656558/97B6885C8186E22D54D9C568BD770F9D1B7E29D9/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855661560/BDA8F9E541D7BE182897899200A9E2283055B4E4/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855691790/D6B5BD26481FCC825A9B8237268089B88AD97B5F/"
+    ],
+    "avatarSvoboda" : [
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855647604/DF429377B334324B16B1122319F9A23BFBAD83F4/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855664452/879F673653364384B1F2812385A0F17B73B28684/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855670141/918D6A494AAF02A80E7CCD63957DCB951496F84F/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855690517/EECFBBDE3CFA671C25964ACF501B8CEC0490A657/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855691051/BF39E6B3187AEDBB3EE3F60E0AB4672A80A3C0C4/"
+    ],
+    "avatarVSU" : [
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855690027/A6B5D49BD0B2DD2119CFACC9CCB0DE0C0246AAEB/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855665242/330923D82863A03C5DFD25B14782752B4A895702/"
+    ],
+    "avatarSientis" : [
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855652181/EF04342B0E4BF4A56C61072BF38744E022F597BF/"
+    ],
+    "avatarMerc" : [
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855669753/A017E39A192239F25F7F5987910E679EC8CE8D4E/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855674566/F0670F758B08BDF020EFDEAC07A0767F83A09321/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855683626/BE0F4B7D92D45D8399F690337F470C7B63D26115/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855705680/5DC9CC6E8D678F35CCB5635F3C93E26F49369AE0/"
+    ],
+    "avatarUN" : [
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855693596/625F74CBD54E707C9C4589C60288416A098143B3/"
+    ],
+    "avatarGrech" : [
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855693596/625F74CBD54E707C9C4589C60288416A098143B3/"
+    ],
+    "avatarMonolith" : [
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855688047/3CA462478AD25B455C990D8F6AB83DDB3D96A6DD/",
+        "https://steamuserimages-a.akamaihd.net/ugc/80345569855701813/7454398D8D33CF0B5B5BFF38C3D383CF4FBB7859/"
+    ],
+    "avatarTorg": [
+        ""
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "token": "MTA1OTAzNTkzMjExNzk3OTE2Ng.G0oJvx.mpZO4z25MvHl27H9CnnolY-m1PJufmYnE6ur6k",
+    "mongodb": "mongodb+srv://ricksanchez10:EieybGUlA0fil76n@cluster0.keywhw6.mongodb.net/?retryWrites=true&w=majority",  
+    "TLRID": "1042147167588065330",
+    "LCID": "1054804473224110080",
+    "WoWID": "1069564412542853141",
+    "ClientID": "1059035932117979166",
+
+    "stalker": "1054804473240879207", 
+    "bandit": "1097224978069471332",
+    "msop": "1097224592860401805",
+    "neutrals": "1097225038966566952", 
+    "clearsky": "1",
+    "renegats": "1", 
+    "duty": "1097224994150437005", 
+    "freedom": "1097225027990081586", 
+    "un": "1",
+    "grech": "1", 
+    "mercenaries": "1097225041361518633",
+    "sientist": "1097225030812848278", 
+    "monolith":  "1097225045111210194"
+}
