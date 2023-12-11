@@ -1,0 +1,104 @@
+const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js')
+const TeamRequest = require('../../Models/TeamRequest')
+
+module.exports = {
+    team: "non",
+    data: new SlashCommandBuilder()
+        .setName("teamrequest")
+        .setDMPermission(false)
+        .setDescription("Заполните анкету")
+        .addStringOption(option =>
+            option.setName("name")
+                .setDescription("Напишите своё Имя")
+                .setRequired(true)
+                .setMaxLength(20)
+        )
+        .addStringOption(option =>
+            option.setName("post")
+                .setDescription("Выберите, на кокой пост вы претендуете")
+                .addChoices(
+                    {name: "rpk", value: "Куратор"},
+                    {name: "dev", value: "Разработчик"},
+                    {name: "ivent", value: "Ивентолог"},
+                )
+                .setRequired(true)
+        )
+        .addStringOption(option =>
+            option.setName("steamid")
+                .setDescription("Напишите ваш SteamID_64")
+                .setRequired(true)
+                .setMaxLength(17)
+                .setMinLength(17)
+        )
+        .addStringOption(option =>
+            option.setName("stage")
+                .setDescription("Напишите ваш опыт")
+                .setRequired(true)
+        )
+        .addStringOption(option =>
+            option.setName("biografy")
+                .setDescription("Вставьте ссылку на ваши работы")
+                .setRequired(false)
+        ),
+        //,
+    async execute(interaction) {
+        const { options, guildId, member, user, guild } = interaction
+        let channel
+        if (guildId == "1054804473224110080") channel = guild.channels.cache.get("1075731128511631371") //1054804473224110080 lost chance
+
+        const name = options.getString("name")
+        const post = options.getString("post")
+        const SteamID = options.getString("steamid")
+        const stage = options.getString("stage")
+        let Bio = options.getString("biografy")
+
+        if (Bio === null) Bio = "-"
+
+        //console.log(Bio)
+        const embed = new EmbedBuilder()
+            .setColor("Orange")
+            .setAuthor({ name: user.tag, iconURL: user.displayAvatarURL({ dynamic: true }) })
+            .addFields(
+                { name: "Имя", value: name, inline: false },
+                { name: "Пост", value: post, inline: false },
+                { name: "Discord Tag", value: `<@${user.id}>`, inline: false },
+                { name: "SteamID64", value: SteamID, inline: true }
+            )
+            .addFields(
+                { name: "Работы", value: Bio, inline: true },
+                { name: "Статус", value: "На рассмотрении", inline: true },
+                { name: "Стаж", value: stage, inline: false}
+            )
+            .setTimestamp()
+
+        const buttons = new ActionRowBuilder().addComponents(
+            new ButtonBuilder().setCustomId("teamsuggest-accept").setLabel("✅ Одобрить").setStyle(ButtonStyle.Success),
+            new ButtonBuilder().setCustomId("teamsuggest-deceline").setLabel("⛔ Отказать").setStyle(ButtonStyle.Danger),
+            new ButtonBuilder().setCustomId("teamsuggest-process").setLabel("👋 Вызвать на собеседование").setStyle(ButtonStyle.Primary),
+        )
+        try {
+            const testToRu = /[0-9]/;
+            if (testToRu.test(embed.data.fields[0].value) === true)
+                return interaction.reply({ content: "Не бывает имён с цифрами без цифр", ephemeral: true })
+            if(!SteamID.startsWith('7656119')) return interaction.reply({content: "Не верный формат steamid", ephemeral: true})
+            
+            //await channel.send({content: "Use `/suggest` in the bot-commands channel to submit your suggestion"})
+            TSuggestion.findOne({DisTag: user.id, GuildID: guildId}, async (err,obj) => {
+                if(err) throw err
+                if (!obj) {
+                    let m = await channel.send({ embeds: [embed], components: [buttons] ,fetchReply: true })
+                    await TSuggestion.create({
+                        GuildID: guildId, 
+                        MessageID: m.id,
+                        DisID: user.id
+                    })
+                    await interaction.reply({ content: "Заявка была успешно отправлена, для получения ответа, удостоверьтесь, что получения сообщений от пользователей вне списка друзей, разрешены для получения.", ephemeral: true })
+                } else {
+                    await interaction.reply({ content: "Заявка обрабатывается", ephemeral: true }) 
+                }
+            })
+        } catch (err) {
+            console.log(err)
+        }
+    }
+}
